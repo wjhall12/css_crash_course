@@ -1,0 +1,111 @@
+* {
+/* This styles all elements with * and to get rid of all margin and padding you can set it to 0 */
+  /* margin: 0;
+  padding: 0; */
+}
+
+body {
+  background-color: #lightgray;
+  /* color: #000fff; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  /* could also use rem. 1 rem is 16px. 16 px is default size */
+  font-weight: normal;
+  /* could also use bold, italic, etc */
+  line-height: 1.6em;
+  /* line height provides space between each line. Usually you see em for line heights. 1 em is 16 px*/
+  margin: 0;
+  /* margin 0 gets rid of all spaces on all 4 sides but if you have an heading you will still have a little margin because headings have some top margin by default */
+}
+
+a {
+  /* text-decoration: none; remove the underline*/
+  text-decoration: none;
+  /* The color of links are always blue by default */
+  color: #000;
+}
+
+a:hover {
+  /* This will change the color if you roll your mouse / hover over the item */
+  color: red;
+}
+
+
+a:active {
+  /* This will change the color when you click on the item */
+  color: green;
+}
+
+/* Developers use a class called containers a lot so that the content doesn't be all the way to the edge of the screen */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.box-1 {
+  background-color: #333;
+  color: #fff;
+  /* border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-left: 5px red solid;
+    border-width: 3px;
+    border-bottom-style: dotted;
+    border-top-width: 10px;*/
+    /* Same as above */
+    border: 5px red solid;
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px; */
+  /* Same as above */
+    padding: 20px;
+    /* margin moves everything outside the border */
+    margin-top: 20px;
+    /* Same as above */
+    margin: 20px 0;
+}
+
+.box-1 h1 {
+  font-family: Tahoma;
+  font-weight: 800;
+/* Numbers in font-weight: Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold	 */
+  font-style: italic;
+  /* text formatting styles */
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+}
+
+.box-2 {
+  border: 8px dotted #ccc;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.categories {
+  border: 1px #ccc solid;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.categories h2 {
+  text-align: center;
+}
+
+.categories ul {
+/* list items usually come with some padding. to get rid of the padding, set padding to 0; */
+  padding: 0;
+  /* list usually have padding at zero, so if you wanted to move an image that may be mext to a list item, add some padding */
+  padding-left: 20px;
+/* list style: none gets rid of bullets */
+  list-style: none;
+}
+
+.categories li {
+  padding-bottom: 6px;
+  border-bottom: dotted 1px #333;
+  /* To save time of sizing images, resize in Photoshop */
+  list-style-image: url('check.png');
+}
